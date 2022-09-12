@@ -17,7 +17,7 @@ namespace AddressBookProblem_LINQ_DAY35
         /// <returns></returns>
         public DataTable UpdatedContactDetails(DataTable dataTable)
         {
-            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Apoorva")).FirstOrDefault();
+            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Aparna")).FirstOrDefault();
             recordData["state"] = "Kerala";
             Console.WriteLine("***********UpdatedData***************");
             Console.WriteLine("FirstName:- " + recordData.Field<string>("firstName"));
@@ -69,9 +69,9 @@ namespace AddressBookProblem_LINQ_DAY35
         public void RetrievingContactDetailsByStateOrCity(DataTable dataTable)
         {
             //lambda syntax for getting data for particular city
-            var recordDataCity = dataTable.AsEnumerable().Where(r => r.Field<string>("city") == "Mumbai");
+            var recordDataCity = dataTable.AsEnumerable().Where(r => r.Field<string>("city") == "Madurai");
             //lambda syntax for getting data for particular state
-            var recordDataState = dataTable.AsEnumerable().Where(r => r.Field<string>("state") == "Maharashtra");
+            var recordDataState = dataTable.AsEnumerable().Where(r => r.Field<string>("state") == "Tamilnadu");
             foreach (var data in recordDataState)
             {
                 Console.WriteLine("FirstName:- " + data.Field<string>("firstName"));
@@ -95,7 +95,7 @@ namespace AddressBookProblem_LINQ_DAY35
         public void GetCountByCityAndState(DataTable datatable)
         {
             //getting count for particular state or city
-            var recordData = datatable.AsEnumerable().Where(r => r.Field<string>("city") == "Mumbai" && r.Field<string>("state") == "Maharashtra").Count();
+            var recordData = datatable.AsEnumerable().Where(r => r.Field<string>("city") == "Madurai" && r.Field<string>("state") == "Tamilnadu").Count();
             //grouping data by city and state
             var recordedData = from data in datatable.AsEnumerable()
                                group data by new { city = data.Field<string>("city"), state = data.Field<string>("state") } into g
