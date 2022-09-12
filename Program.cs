@@ -65,13 +65,12 @@ namespace AddressBookProblem_LINQ_DAY35
 
 
             //Inserting data into columns into datatable UC3
-            addressBookTable.Rows.Add("Tushar", "Vidwans", "Malkapur", "Akola", "Maharashtra", 444004, 9879847453, "tushar.vidwans");
-            addressBookTable.Rows.Add("Apoorva", "Patil", "Ambika Nagar", "hisar", "Telangana", 125433, 8585858585, "appoo.p");
-            addressBookTable.Rows.Add("Amit", "Kumar", "Andheri", "Mumbai", "Maharashtra", 125445, 7575757575, "amit.kumar");
-            addressBookTable.Rows.Add("Kamalakar", "Singh", "Thanesar", "Kurukshetra", "Haryana", 136119, 9595959595, "kamalakar.singh");
+            addressBookTable.Rows.Add("Tamil", "velan", "Madurai", "andipatty", "Tamilnadu", 642345, 984563789, "tamilvelan24");
+            addressBookTable.Rows.Add("Anish", "Paster", "Ambal Nagar", "hosur", "Tamilnadu", 123456, 8976543212, "anishmsav123");
+            addressBookTable.Rows.Add("Anil", "Kumar", "alanganallur", "electroniccity", "banglore", 125445, 8787878787, "a.kumar23");
+            addressBookTable.Rows.Add("chandru", "kalamath", "gadag", "gadag", "banglore", 123456, 9595959595, "chandrukalamath43");
             addressBookTable.Rows.Add("Praveen", "Kumar", "rohini", "Delhi", "Delhi", 435121, 7897897898, "praveen.kumar");
-            addressBookTable.Rows.Add("Apoorva", "Singh", "Andheri", "Mumbai", "Maharashtra", 125445, 8598598599, "apporva.singh");
-
+            addressBookTable.Rows.Add("Aparna", "Sri", "Andipatty", "Madurai", "Tamilnadu", 125445, 980000067, "aparnasr34");
 
 
             AddressBookManagement addressBookManagement = new AddressBookManagement();
