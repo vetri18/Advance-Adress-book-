@@ -44,7 +44,7 @@ namespace AddressBookProblem_LINQ_DAY35
             //getting all the data except the data to be deleted
             //saving them in new data table by copytodatatable method
             //returning the new data table
-            DataTable dataTableupdated = datatable.AsEnumerable().Except(datatable.AsEnumerable().Where(r => r.Field<string>("firstName") == "Kamalakar" && r.Field<string>("lastName") == "Singh")).CopyToDataTable();
+            DataTable dataTableupdated = datatable.AsEnumerable().Except(datatable.AsEnumerable().Where(r => r.Field<string>("firstName") == "Kalamath" && r.Field<string>("lastName") == "chandru")).CopyToDataTable();
             foreach (var data in dataTableupdated.AsEnumerable())
             {
                 Console.WriteLine("FirstName:- " + data.Field<string>("firstName"));
